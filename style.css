@@ -1,0 +1,375 @@
+/*
+Name: Nikolin Mele
+Date Created: 05/11/2021
+Date modified: 05/18/2021
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  color: #f0f0f0;
+  
+}
+
+h4{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+
+h2{
+  font-family: 'Roboto',sans-serif;
+  color: rgb(7, 34, 66);
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px rgb(192, 192, 10);
+}
+
+h3{
+  font-family:'Roboto',sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(7, 34, 66);
+}
+
+h5{
+  text-align: center;
+  font-size: larger;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700;
+  color: rgb(7, 34, 66);
+  padding-bottom: 20px;
+}
+
+p, ul{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* header */
+.logo{
+  padding: 20px 0 20px 40px;
+  background-color:rgb(7, 34, 66);
+  height: 110px;
+  border-bottom: 4px solid rgb(192, 192, 10);
+}
+
+/* Nav Bar*/
+.nav{
+  display: flex;  
+  justify-content: flex-end;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  background-color: #8d0a1c;
+  box-shadow: 0 2px 0 #10346E;
+  z-index: 10;
+}
+
+.nav-List{
+  list-style-type: none;
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-List a{
+  text-decoration: none;
+  color: #f0f0f0;
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.nav-List a:hover{
+  background: #035F90;
+}
+
+/*main Content*/
+.about-coference{
+  display:flex;
+  padding-left: 150px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh; 
+}
+
+.column{
+  float: left;
+  width: 50%;
+  height: 600px;
+  
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lehman-image, .speaker-image{
+  width: 100%;
+  height: 600px;
+}
+
+#paragraphs{
+  padding: 20px;
+}
+
+#computing-coference,
+#aboutme{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.goal-list{
+  list-style-type:square;
+  padding: 0 20px 20px 40px;
+}
+
+.text-btn{
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgb(7, 34, 66);
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.text-btn:hover {
+  background:#035F90;
+  color: #f0f0f0;
+  
+}
+
+#organizer{
+  font-style: italic;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.organizer-list{
+  list-style-type:lower-roman;
+  padding: 10px 20px 20px 40px;
+}
+
+/*Registration*/
+.registration{
+  height: 140vh;
+  padding-top: 50px;
+  background-color: ; 
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fields{
+  margin-left: 20%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.field-required{
+  color: red;
+  margin-left: 5px;
+}
+
+.field-box{
+  width: 60%;
+  margin-left: 5%;
+  height: 30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight:350;
+  border-radius: 5px;
+}
+
+#country{
+  width: 60%;
+  margin-left: 5%;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.disc-field-box{
+  width: 35%;
+  margin-left: 5%;
+  height: 30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight:350;
+  border-radius: 5px;
+}
+
+
+#apply-btn{
+  width: 19%;
+  height: 30px;
+  margin-left: 1%;
+  background: #05d488;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#apply-btn:hover{
+  background:#80f3c9;
+  transform: translateY(4px);
+}
+
+.total-amount{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#total,
+#dollar-sign{
+  font-weight: 700;
+  color: #8D0A1C;
+}
+
+.submit-btn{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#register-btn {
+  width: 40%;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background:#035F90;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #b5e0f7;
+}
+
+#register-btn:hover {
+  background-color: #28aaf0
+}
+
+#register-btn:active {
+  background-color: #034061;
+  box-shadow: 0 5px #7d97a5;
+  transform: translateY(4px);
+}
+
+#author, #participant, #student{
+  margin-left: 25%;
+}
+
+.dis-text{
+  margin-left: 5%;
+  font-style: italic;
+  font-size: 12px;
+}
+
+
+.errorsStyle{
+  padding-left: 10%;
+  font-style: italic;
+  font-weight: 100;
+  color: red;
+}
+
+/*Contact Us*/
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  padding: 0 2rem;
+}
+
+.contact-header >h2{
+  font-size: 6rem;
+}
+
+.contact-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 25px;
+  font-weight: 700;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+  color: #10346E;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.btn{
+  display: inline-block;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+}
+
+/*Footer*/
+footer{
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 300;
+  display: flex;
+  padding: 10px 0 20px 60px;
+  background: rgb(7, 34, 66);
+  border-top: 4px solid rgb(192, 192, 10);
+  color: #f0f0f0;
+}
+
+.footer-title{
+  font-size: larger;
+  padding-bottom: 7px;
+}
